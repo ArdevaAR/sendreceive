@@ -55,7 +55,7 @@ export default function Home() {
         <label htmlFor="nama">Nama Lengkap</label>
         <input id="nama" name="nama" maxLength={100} required />
 
-        <label htmlFor="pesan">Pesan</label>
+        <label htmlFor="pesan">Pesan Anda</label>
         <textarea id="pesan" name="pesan" maxLength={3000} rows={5} required />
 
         <label htmlFor="gambar">Gambar (maks. 5 MB)</label>
