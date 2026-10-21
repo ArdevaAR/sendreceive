@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./globals.css";
 
-const API_URL = "https://gui-workstation-cas-alias.trycloudflare.com";
+const API_URL = " https://shoes-surprise-ministries-lion.trycloudflare.com";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
