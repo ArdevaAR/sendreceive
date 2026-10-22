@@ -3,7 +3,8 @@
 import { useState } from "react";
 import "./globals.css";
 
-const API_URL = " https://also-ctrl-java-mood.trycloudflare.com";
+const API_URL =
+  "  https://moderator-composed-readers-kit.trycloudflare.com    ";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -49,14 +50,28 @@ export default function Home() {
   return (
     <main className="container">
       <form className="form" onSubmit={handleSubmit}>
-        <h1>Kirim Pesan</h1>
-        <p>Kirim teks dan gambar ke server.</p>
+        <h1>
+          Send<span>Receive</span>.
+        </h1>
 
         <label htmlFor="nama">Nama Lengkap</label>
-        <input id="nama" name="nama" maxLength={100} required />
+        <input
+          id="nama"
+          name="nama"
+          maxLength={100}
+          placeholder="nama anda"
+          required
+        />
 
         <label htmlFor="pesan">Pesan Anda</label>
-        <textarea id="pesan" name="pesan" maxLength={3000} rows={5} required />
+        <textarea
+          id="pesan"
+          name="pesan"
+          placeholder="pesan anda"
+          maxLength={3000}
+          rows={5}
+          required
+        />
 
         <label htmlFor="gambar">Gambar (maks. 5 MB)</label>
         <input

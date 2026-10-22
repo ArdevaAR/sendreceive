@@ -1,38 +1,62 @@
+:root {
+  --color1: #4e95ff;
+  --color3: gold;
+  --color4: white;
+  --color5: black;
+  --color6: #686c71;
+
+  --still1: #0f172acc;
+  --still2: white;
+  --still3: #1b1b1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .container {
   min-height: 100vh;
   padding: 30px 16px;
-  background: #0f172a;
-  color: white;
-  font-family: Arial, sans-serif;
+  background: var(--color4);
+  color: var(--color5);
 }
 
 .form {
-  box-sizing: border-box;
   max-width: 480px;
   margin: 30px auto;
   padding: 24px;
-  background: #1e293b;
+  background: var(--color1);
+  color: var(--color4);
+  border: 0.1rem solid var(--color3);
   border-radius: 16px;
 }
 
 .form h1 {
-  font-size: 24px;
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--color4);
+}
+
+.form h1 span {
+  color: var(--color5);
 }
 
 .form label {
   display: block;
   margin: 18px 0 8px;
+  color: var(--color4);
 }
 
 .form input,
 .form textarea,
 .form button {
-  box-sizing: border-box;
+  display: block;
   width: 100%;
   padding: 12px;
   border-radius: 8px;
@@ -41,18 +65,31 @@ body {
 
 .form input,
 .form textarea {
-  border: 1px solid #475569;
-  background: #0f172a;
-  color: white;
+  border: 0.1rem solid var(--color3);
+  background: var(--color4);
+  color: var(--color5);
+}
+
+.form textarea {
+  resize: none;
+  min-height: 120px;
+  overflow-y: auto;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid var(--color3);
+  border-color: var(--color3);
 }
 
 .form button {
   margin-top: 20px;
-  border: 0;
-  background: #4e95ff;
-  color: white;
+  border: 0.1rem solid var(--color4);
+  background: #00ff11;
+  color: #545454;
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .form button:disabled {
@@ -62,5 +99,6 @@ body {
 
 .hasil {
   margin-top: 16px;
+  color: var(--color5);
   overflow-wrap: anywhere;
 }
