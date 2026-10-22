@@ -3,8 +3,7 @@
 import { useState } from "react";
 import "./globals.css";
 
-const API_URL =
-  "  https://moderator-composed-readers-kit.trycloudflare.com    ";
+const API_URL = "https://moderator-composed-readers-kit.trycloudflare.com";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
